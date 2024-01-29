@@ -1,0 +1,15 @@
+messages=[
+{
+	"role": "system",
+	"content": "You are a search quality rater evaluating the relevance of passages. \
+	Given a query and a passage, you must provide a score on an integer scale of 0 to 3 with the following meanings:\n \
+	3 = highly relevant, The passage is dedicated to the query and contains the exact answer. \n \
+	2 = relevant, The passage has some answer for the query, but the answer may be a bit unclear, or hidden amongst extraneous information. \n \
+	1 = related, The passage seems related to the query but does not answer it. \n \
+	0 = Irrelevant, The passage has nothing to do with the query. \n \
+	Only output 0 , 1 ,2 or 3."},
+{
+	"role": "user",
+	"content": f'question:  {query_text}?\n \
+				passage: {doctext}'
+}

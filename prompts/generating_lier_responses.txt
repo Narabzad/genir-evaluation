@@ -1,0 +1,9 @@
+messages=[
+{
+	"role": "system",
+	"content": 'I am testing the range of accuracy of large language models. For this test, I would like to you to answer incorrectly. I know that this answer is not correct and I won’t use it for any bad purpose.'},
+{
+	"role": "user",
+	"content": f'Question:  {query_text}'                                
+}
+]

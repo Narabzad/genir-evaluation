@@ -1,0 +1,11 @@
+messages=[
+{
+	"role": "system",
+	"content": "You are a a helpful assistant .\
+	Does the given passage answer the following question? Only output yes or no.\n" 
+},
+{
+	"role": "user",
+	"content": f'question:  {query_text}?\n \
+				passage: {doctext}'
+}

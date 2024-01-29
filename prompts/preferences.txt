@@ -1,0 +1,15 @@
+messages=[
+{
+	"role": "system",
+	"content": "You are a search quality rater evaluating the relevance of passages. \
+	Given a query and two passages A and B, you must choose the passage that answers the question better.\n \
+	If both answerrs are similar, select the one with the least extraneous information. \n\
+	If both answers are still similar, select the one with the best formatting.\n \
+	If none of them answer the question, randomly select one. \n \
+	Only provide 'A' or 'B' as an output. " },
+{
+	"role": "user",
+	"content": f'Question:  {queries[qid]}?\n \
+				Passage A: {col[doc1]} \n Passage B: {col[doc2]}'                                
+}
+]

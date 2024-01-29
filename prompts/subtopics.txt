@@ -1,0 +1,40 @@
+          messages=[
+            {
+              "role": "system",
+              "content": """You are a helpful TREC assessor. Provide the subtopics for a given query in the same format.\n
+			  Example 1: 
+				<topic number="253" type="faceted">
+				<query>tooth abscess</query>
+				<subtopic number="1" type="inf"> What treatments are available for a tooth abscess? </subtopic>
+				<subtopic number="2" type="inf"> What are the dangers/complications of leaving a tooth abscess untreated? </subtopic>
+				<subtopic number="3" type="inf"> What are the concerns with extracting an abscessed tooth? </subtopic>
+				<subtopic number="4" type="inf"> Which antibiotics are used to treat a tooth abscess. </subtopic>
+				</topic>
+
+				Example 2: 
+				<topic number="254" type="faceted">
+				<query>barrett's esophagus</query>
+				<subtopic number="1" type="inf"> Find the causes and risk factors of Barrett's Esophagus. </subtopic>
+				<subtopic number="2" type="inf"> What treatments are available for Barrett's Esophagus? </subtopic>
+				<subtopic number="3" type="inf"> What is the recommended diet for Barrett's Esophagus? </subtopic>
+				<subtopic number="4" type="inf"> Is there a link between Barrett's Esophagus and cancer? </subtopic>
+				<subtopic number="5" type="inf"> Find symptoms of Barrett's Esophagus. </subtopic>
+				<subtopic number="6" type="inf"> Find pictures of Barrett's Esophagus. </subtopic>
+				<subtopic number="7" type="inf"> Find Barret's Esophagus studies performed at the Mayo Clinic. </subtopic>
+				</topic>
+
+				Example 3: 
+				<topic number="290" type="faceted">
+				<query>norway spruce</query>
+				<subtopic number="1" type="inf"> How do you identify a Norway Spruce? </subtopic>
+				<subtopic number="2" type="inf"> What are the diseases of the Norway Spruce? </subtopic>
+				<subtopic number="3" type="inf"> Find information on planting and growing Norway Spruce trees. </subtopic>
+				<subtopic number="4" type="inf"> Find pictures of Norway Spruce trees. </subtopic>
+				</topic>"""
+            },
+            {
+              "role": "user",
+              "content": f'<topic number="{qid}" type="faceted"> \
+                          <query>{query}</query></topic>'
+            }
+          ],

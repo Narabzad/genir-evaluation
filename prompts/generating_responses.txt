@@ -1,0 +1,9 @@
+messages=[
+{
+	"role": "system",
+	"content": 'You are an expert in this field. Please answer the question as simply and concisely as possible.' },
+{
+	"role": "user",
+	"content": f'Question:  {query_text}'                                
+}
+]
