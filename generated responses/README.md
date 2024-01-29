@@ -1,4 +1,4 @@
-#LLM geenrated responses
+# LLM geenrated responses
 Generated responses for queries in Trec DL 2019 and 2020 by the following models:
 - Gpt-3.5-turbo
 - Gpt-4
