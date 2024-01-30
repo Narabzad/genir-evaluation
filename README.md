@@ -8,4 +8,4 @@ geenrated responses directory includes all the regular generated responses as we
 - llama2 7b chat
 - llama2 13b chat LLMs.
 
-The results for experiments conducted in Section 3 and 4 can be found under ``Validations'' and ``Genir experiments'' respectively.
+The results for experiments conducted in Section 3 and 4 can be found under ``Validations`` and ``Genir experiments`` respectively.
